@@ -10,7 +10,7 @@ def run_me(filename):
     print("Transcription finished. Begin summary:")
     sum.summary("transcription.txt")
     print("Summary finished. Begin keywords:")
-    sum.get_keywords()
+    sum.get_keywords("transcription.txt")
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="Recognizes speech in a WAV file, then summarizes the generated text and extracts keywords.")
